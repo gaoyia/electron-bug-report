@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #button-position {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 52px;
+        height: 12px;
+        background-color: red;
+      }
+      #bar {
+        height: 30px;width: 100%;background-color: cadetblue;-webkit-app-region: drag;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bar"></div>
+    <div id="button-position"></div>
+    <h1>bug:</h1>
+    <h4>win.setWindowButtonPosition({ x: 50, y: 20 }) </h4>
+    <h4>The button in the red area cannot be moved.</h4>
+
+    <a target="_blank" href="https://github.com/electron/electron/issues/42081">https://github.com/electron/electron/issues/42081</a>
+  </body>
+</html>
